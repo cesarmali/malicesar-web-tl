@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.container {
+	height: 100%;
+	width: 1300px;
+	
+}
+.banner {
+	float: left;
+	height: 100%;
+	width: 1250px;
+	/*background-color: #F9C;*/
+	overflow:visible
+
+}
+
+.nav {
+	/*background-color: #A9DFBF;*/
+	float: left;
+	height: 1000px;
+	width: 400px;
+	overflow:visible;
+	
+
+}	
+a {text-decoration:none} /*THIS CODE IS TO REMOVE LINKS UNDERLINE */
+.footer {
+	background-color: #6F6;
+	float: left;
+	height: 30px;
+	width: 1290px;
+	font-size:18px;
+	color:green;
+	padding:14px;
+
+}
+
+.batas {border:1px solid #666;}
+.w3-round {border-radius:4px;}
+
+	
+	
+.collapsible {
+ /* background-color: #777;*/
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/*.active, .collapsible:hover {
+  background-color: #555;
+}*/
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+/*.active:after {
+  content: "\2212";
+}*/
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.coba > a {font-size:25px;}
+.kiik {font-size:14px;}
+.sanak {font-size:14px; color:red;}
