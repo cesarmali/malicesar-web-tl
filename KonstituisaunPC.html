@@ -170,7 +170,20 @@ ul, #myUL {
 <hr>
 </head>
 
-<body>
+<body oncontextmenu=”return false;”>
+	
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
 
 <div id="mySidenav" class="sidenav" style="font-family:Calibri">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
