@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+/* Connecting lines */
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+.tree li:only-child {
+    padding-top: 0;
+}
+
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0;
+}
+
+.tree li:last-child::before {
+    border-right: 1px solid #ccc;
+}
+
+.tree a {
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.tree a:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.tree li a {
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.tree li a:hover {
+    background-color: #71368a;
+}
