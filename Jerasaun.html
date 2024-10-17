@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Family Tree</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+			font-size: 12px
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+        }
+
+        /* Connectors */
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0;
+        }
+
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+        }
+
+        .tree a {
+            padding: 5px 10px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+
+        .tree a:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        .toggle-btn {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="tree">
+        <ul>
+            <li>
+                <a href="#" class="member"><span style="color:yellow">Avo Pedro (5)</span></a>
+                <span class="toggle-btn">[+]</span>
+                <ul class="hidden">
+                    <li>
+                        <a href="#" class="member" <span style="color:#F76FB3">Maria</span></a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Ana</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Manuel</li>
+									<li>Narciso</li>
+									<li>Meucai</li>
+									<li>Afati</li>
+									<li>Bebe</li>
+									<li>Minguino</li>
+									<li>Severino</li>
+									<li>Anselmo</li>
+									<li>Julia</li>
+									<li>Eva</li>
+									<li>Adao</li>
+									<li>Verdial</li>
+									<li>J.Antonio</li>
+									<li>Aqua</li>
+									<li>Amado</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="member">Adina</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Atanasio</li>
+									<li>Joaninha</li>
+									<li>Alita</li>
+									<li>Lolo</li>
+									<li>Tunito</li>
+									<li>Aluis</li>
+									<li>Ere</li>
+									<li>Akasa</li>
+									<li>Abala</li>
+									<li>Atolai</li>
+								</ul>
+							</li>
+
+							<li><a href="#" class="member">Atinu</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Ano</li>
+									<li>Anoi</li>
+									<li>Akiku</li>
+									<li>Agita</li>
+									<li>Atima</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="member">Aurelia</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Filito</li>
+									<li>Rosalina</li>
+									<li>Angelo</li>
+									<li>Akoku</li>
+									<li>Irineu</li>
+									<li>Afin</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="member">Alou</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Atodi</li>
+									<li>Ajildo</li>
+									<li>Noi</li>
+									<li>Mingulai</li>
+									<li>Afili</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="member">Atina</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Atoi</li>
+									<li>Cesar</li>
+								</ul>
+							</li>
+
+							<li><a href="#" class="member">Amaco</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Sancho</li>
+									<li>Sabino</li>
+									<li>Anoi</li>
+									<li>Belinha</li>
+									<li>Anando</li>
+									<li>Inai</li>
+									<li>Amundo</li>
+									<li>Abere</li>
+									<li>Sitoi</li>
+								</ul>
+							</li>
+
+							<li><a href="#" class="member">Alena</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Zezinha</li>
+									<li>Zeca</li>
+									<li>Rogerio</li>
+									<li>Abilai</li>
+									<li>Natalino</li>
+									<li>Apeu</li>
+									<li>Meuleti</li>
+									<li>Maninha</li>
+									<li>Oka</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="member">Asenti</a>
+								<span class="toggle-btn">[+]</span>
+								<ul class="hidden">
+									<li>Hugo</li>
+									<li>Uta</li>
+									<li>Tuti</li>
+									<li>Noi</li>
+									<li>Mami</li>
+								</ul>
+							</li>							
+							<li><a href="#" class="member">Alena</a></li>
+                        </ul>
+                    </li>
+					
+                    <li>
+                        <a href="#" class="member" <span style="color:#F76FB3">Joana</span></a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member" <span style="color:#F76FB3">Natalia</span></a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member" <span style="color:#F76FB3">Jose</span></a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member" <span style="color:#F76FB3">Mario</span></a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+			
+            <li>
+                <a href="#" class="member" <span style="color:yellow">Avo Clara</span></a>
+                <span class="toggle-btn">[+]</span>
+                <ul class="hidden">
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+			
+            <li>
+                <a href="#" class="member" <span style="color:yellow">Avo Ursula</span></a>
+                <span class="toggle-btn">[+]</span>
+                <ul class="hidden">
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="member">Oan</a>
+                        <span class="toggle-btn">[+]</span>
+                        <ul class="hidden">
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                            <li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+							<li><a href="#" class="member">Oan 1</a></li>
+                            <li><a href="#" class="member">Oan 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>			
+        </ul>
+    </div>
+
+    <script>
+        // Get all toggle buttons
+        const toggles = document.querySelectorAll('.toggle-btn');
+
+        toggles.forEach((toggle) => {
+            toggle.addEventListener('click', function() {
+                // Find the next sibling UL (which contains Oan nodes)
+                const OanNodes = this.nextElementSibling;
+
+                // Toggle visibility of Oan nodes
+                if (OanNodes.classList.contains('hidden')) {
+                    OanNodes.classList.remove('hidden');
+                    this.textContent = '[-]'; // Change the toggle button to collapse
+                } else {
+                    OanNodes.classList.add('hidden');
+                    this.textContent = '[+]'; // Change the toggle button to expand
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
