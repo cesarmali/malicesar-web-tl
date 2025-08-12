@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dadus Orgaun Komunikasaun Sosial</title>
+  <link rel="stylesheet" href="style_regis.css">
+  <style>
+    /* Optional basic styling */
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+    }
+    select, button {
+      margin-right: 10px;
+      padding: 5px;
+    }
+  </style>
+ 
+      <!-- JavaScript to disable right-click -->
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  </script>
+ 
+</head>
+<body>
+
+  <div class="container">
+    <h4>Home / Dadus Imprensa</h4>
+    <h1>Orgaun Komunikasaun Sosial</h1>
+
+    <div class="stats">
+      <div class="card blue">
+        <p>Imprensa La Rejistadu</p>
+        <h2>5</h2>
+        <p>Imprensa Rejistadu</p>
+        <h2>20</h2>
+        <h3>Imprime</h3>
+      </div>
+      <div class="card green">
+        <p>Imprensa La Rejistadu</p>
+        <h2>10</h2>
+        <p>Imprensa Rejistadu</p>
+        <h2>60</h2>
+        <h3>Dijital/Online</h3>
+      </div>
+      <div class="card yellow">
+        <p>Imprensa La Rejistadu</p>
+        <h2>8</h2>
+        <p>Imprensa Rejistadu</p>
+        <h2>4</h2>
+        <h3>Televizaun</h3>
+      </div>
+      <div class="card purple">
+        <p>Imprensa La Rejistadu</p>
+        <h2>9</h2>
+        <p>Imprensa Rejistadu</p>
+        <h2>15</h2>
+        <h3>Radio</h3>
+      </div>
+    </div>
+
+    <div class="totals">
+      <span>Total Media La Rejistadu: <strong>32</strong></span>
+      <span>Total Media Rejistadu: <strong>99</strong></span>
+    </div>
+
+    <div class="filters">
+      <select id="mediaType">
+        <option value="">-Tipu Media-</option>
+        <option value="radio">Radio</option>
+        <option value="tv">Televizaun</option>
+        <option value="online">Online</option>
+      </select>
+
+      <select id="municipality">
+        <option value="">-Munisipiu-</option>
+        <option value="dili">Dili</option>
+        <option value="baucau">Suai</option>
+        <option value="manatutu">Ainaro</option>
+        <option value="manatutu">Manufahi</option>
+      </select>
+
+      <select id="status">
+        <option value="">-Estatus-</option>
+        <option value="rejistadu">Rejistadu</option>
+        <option value="la rejistadu">La Rejistadu</option>
+      </select>
+
+      <button onclick="filterTable()">Buka</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Naran Media</th>
+          <th>Responsavel</th>
+          <th>Enderesu</th>
+          <th>Munisipiu</th>
+          <th>Estatutu</th>
+          <th>Estatus</th>
+          <th>Data Rejistu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Timor Post</td>
+          <td>Jacob Ximenes</td>
+          <td>Bebora</td>
+          <td>Dili</td>
+          <td>Fundasaun Timor Post</td>
+          <td>Rejistadu</td>
+          <td>15/01/2000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Radio Televizaun Maubere</td>
+          <td>Aitahan Matak</td>
+          <td>Avenida Prezidente Nicolau Lobatu</td>
+          <td>Dili</td>
+          <td>Media Partidu</td>
+          <td>La Rejistadu</td>
+          <td>20/09/2002</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Radio Taroman</td>
+          <td>Fredy Moniz</td>
+          <td>Avenida Setembru Negro</td>
+          <td>Suai</td>
+          <td>Fundasaun Fulan Lotuk</td>
+          <td>Rejistadu</td>
+          <td>05/12/2010</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Suara Timor Lorosae</td>
+          <td>Salvador Saldanha</td>
+          <td>Avenida Hudi Laran</td>
+          <td>Dili</td>
+          <td>Fundasaun Watulari</td>
+          <td>Rejistadu</td>
+          <td>12/12/2003</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Orluli Lian</td>
+          <td>Jose da Costa</td>
+          <td>Avenida Mota Laran</td>
+          <td>Ainaro</td>
+          <td>Radio Komunidade</td>
+          <td>Rejistadu</td>
+          <td>06/07/2019</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Radio Kablaki </td>
+          <td>Domingos Soares</td>
+          <td>Avenida Kota Lama</td>
+          <td>Manufahi</td>
+          <td>Radio Komunidade</td>
+          <td>Rejistadu</td>
+          <td>17/10/2019</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>TV Guardamor</td>
+          <td>Jose Belo</td>
+          <td>Avenida Nicolau Lobato</td>
+          <td>Dili</td>
+          <td>Fundasaun Guardamor</td>
+          <td>Rejistadu</td>
+          <td>14/06/2019</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JavaScript for filtering -->
+  <script>
+    function filterTable() {
+      const mediaType = document.getElementById("mediaType").value.toLowerCase();
+      const municipality = document.getElementById("municipality").value.toLowerCase();
+      const status = document.getElementById("status").value.toLowerCase();
+
+      const table = document.querySelector("table tbody");
+      const rows = table.querySelectorAll("tr");
+
+      rows.forEach(row => {
+        const cells = row.querySelectorAll("td");
+        const name = cells[1].textContent.toLowerCase();
+        const muni = cells[4].textContent.toLowerCase();
+        const estatus = cells[6].textContent.toLowerCase();
+
+        const matchMedia = mediaType ? name.includes(mediaType) : true;
+        const matchMuni = municipality ? muni.includes(municipality) : true;
+        const matchStatus = status ? estatus.includes(status) : true;
+
+        if (matchMedia && matchMuni && matchStatus) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
