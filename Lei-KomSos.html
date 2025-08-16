@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"]]>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LEI KOMSOS</title>
+<link href="styleCons.css" rel="stylesheet" type="text/css" />
+
+<style>
+{
+	margin:0px;
+	padding:0px;
+	}
+	
+/* Rules for navigation */
+/* -------------------------------------------------------*/
+
+.banner {margin-left:50px}
+
+ul#navmenu, ul.sub1, ul.sub2, ul.sub3 {
+	list-style-type: none;
+	font-size: 9pt;
+	
+}
+ul#navmenu li {
+	width: 125px;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-right: 4px;
+	Background-color:green;
+
+}
+
+ul#navmenu a {
+	text-decoration: none;
+	display: block;
+	width: 125px;
+	height: 25px;
+	line-height:25px;
+	background-color:#FFF;
+	border: 1px solid #CCC;
+	border-radius:40px;	
+	}
+
+ul#navmenu .sub1 a {
+	margin-top: 5px;
+	}
+	
+ul#navmenu .sub2 a {
+	margin-left: 10px;
+	}
+	
+ul#navmenu .sub3 a {
+	margin-left: 15px;
+	}
+	
+ul#navmenu li:hover > a {
+	color:red ;
+	}
+ul#navmenu li:hover a:hover {
+	background-color:#FF0;
+	}
+ul#navmenu ul.sub1 {
+	display: none;
+	position: absolute;
+	top: 26px;
+	left: 0px;
+	
+	}
+ul#navmenu ul.sub2 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 80px;	
+	}
+	
+	ul#navmenu ul.sub3 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 85px;	
+	}
+	
+ul#navmenu li:hover .sub1 {
+	display: block;
+	}
+ul#navmenu .sub1 li:hover .sub2 {
+	display: block;
+	}
+
+ul#navmenu .sub2 li:hover .sub3 {
+	display: block;
+	}
+	
+ul#navmenu .sub2 li:hover .sub3 {
+	display: block;
+	}
+
+
+ul, #myUL {
+  list-style-type: none; 
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.sidenav {
+  height: 80%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: scroll;
+  transition: 0.5s;
+  padding-top: 5px;
+  margin-top;30px;
+  margin-left:10%;
+}
+
+@media screen and (max-height: 100px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: scroll;
+  padding-top: 20px;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 28px;
+  margin-left: 50px;
+
+
+
+</style>
+
+<hr>
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav" style="font-family:Calibri">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+<center><h2 style="color:white">LEI N.º 5 /2014 - 19 Novembru - Lei Komunikasaun Sosiál</h1></center>
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Konsidera katak direitu ba informasaun no liberdade espresaun no imprensa nu’udar prinsipál hodi hametin demokrasia, Estadu Timórsei prepara hodi haforte setór komunikasaunsosiál.
+ </li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Iha kontestu ida-ne’e, lei ida-ne’e, nu’udar lei dahuluk Timor-Leste nian ne’ebé livre no independente, kona-ba halo defeza ba liberdade imprensa no regula media, defende direitu sidadaun nian hodi ezerse ho liberdade espresaun tomak no hanoin no loke-dalan ba profisionál hodi fó informasaun nune’e hatuur garantia ba sijilu profisionál no hametin ninia independénsia.. </li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Haree ba ida-ne’e, importante tebes lei hatuur sasukat ba forma atu bele ezerse liberdade hirakne’e, ne’ebé regula, hametin ninia konkretizasaun.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Atu estabelese banati sira kona-ba hala’o direitu hodi fó-sai informasaun no liberdade espresaun no imprensa hatudu nu’udar fundamentál, la’ós de’it hodi halo-tuir ba saida maka Konstituisaun estabelese, ne’ebé prevee iha artigu 40.º no 41.º Lei-Inan nian, maibé mós, iha lalehat dahikus, hodi hametin hala’ok hodi harii Estadu direitu demokrátiku.</li>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Lei ida-ne’e ho objetivu hodi hametin liberdade imprensa, promove ekilíbriu ne’ebé presiza entre ezersísiu hosi liberdade fundamentál ida-ne’e nomós direitu no valór hirak seluk ne’ebé Konstituisaun proteje.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Kapítulu daualuk hosi diploma ida-ne’e buka regula ezersísiu atividade jornalista nian iha railaran liuhosi jornalista no órgaun sira komunikasaun sosiál. Estrutura sistemátika organiza liuhosi forma ne’ebé halo tiha ona deskrisaun iha aneksu úniku ba lei ida-ne’e.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Ho fundamentu katak diploma ida-ne’e hakarak tebes atu profisionál sira-ne’ebé prepara-an no tuir étika nu’udar responsavel bele fó-hatene, ema tomak ho dalan bá loos mai loos no imparsiál, estimula ezersísiu sidadania ativa ida no esklaresidu hosi parte populasaun nian.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Iha tempu hanesan maka sei admite katak kapitál estranjeiru dala ruma bele fó-tulun ba finansiamentu setór komunikasaun sosiál, tenke konsidera ho hanesan nesesidade hodi hakloot ninia partisipasaun, hodi hametin kontrolu nasionál, nu’udar interese nasionál ida atu fó protesaun, haktuir artigu 140.º Lei-Inan Repúblika nian, tanba liuhosi dalan ne’e maka hakarak tebes hatuur garantia katak konteúdu informativu no edukativu sira barak liu maka nasionál, haburas identidade nasionál, afirma no valoriza povu timoroan ida-idak no ninia patrimóniu kulturál. Hosi sorin seluk, hala’ok hodi hakloot sei halo tan razaun seguransa ba Estadu no defende no garante soberania rain nian ba podér influénsia ba komunikasaun sosiál, tuir iha artigu 6.º, alínea a), Konstituisaun Repúblika</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Hakarak tebes liuhosi lei ida-ne’e hamoris mekanizmu hodi regula no rezolve konflitu ne’ebé maihosi relasaun órgaun sira komunikasaun sosiál nian ho sidadaun nomós sosiedade.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Entidade administrativu ida independente, ne’ebé dekretu lei maka atu hamoris hanaran nu’udar Konsellu Imprensa, asegura kumprimentu lei idane’e, liuliu halo observasaun ba direitu no devér jornalista sira-nian, hanesan mós ho haktuir loloos prinsípiu étiku sira ba atividade jornalista nian.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Ikusliu, sei determina sansaun sira hasouru aktu sasá de’it ne’ebé hahaat direitu hodi fó-sai informasaun.</li><p>
+
+<p><li style="color:#ff8000; font-size:36px; padding:10px">Nune’e, Parlamentu Nasionál dekreta tuir saida maka prevee iha nº 1, artigu 95.º Lei-Inan Repúblika nian hodi hetan kmanek nu’udar lei tuirmai:</li><p>
+</div>
+ 
+ 
+<span style="font-size:20px; color:red; cursor:pointer" onclick="openNav()">&#9776; Prefacio</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "90%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<center><h2 style="color:blue"><marquee behavior="alternate" direction="left">KONSELLU IMPRENSA</marquee></h2></center>
+			<hr>
+			
+<div class="container">
+	<div class="banner"> 	
+<center><h4>Sei Iha Faze Konstrusaun, Sidauk Konklui</h4></center>	
+		<center><h1 style="border:1px solid green; padding:8px; background-color:green; color:yellow">Lei Komunikasaun Sosial</h1></center>
+			<div id="Parte1">
+				<ul id="myUL">
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU I</span> - DISPOZISAUN JERÁL SIRA (Artigu 1-6)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1º - Objetu</span>
+												<ul class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ul>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu 2º - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun sira tuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+												<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li><p>
+													<p><li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade hodi fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li><p>
+													<p><li>“Sensura”, remosaun forsada hodi fó-sai informasaun ne’ebé atu publika ka hato’o, inklui tentativa rasik, hanesan mós ho impozisaun hodi fó-sai konteúdu ba órgaun sira komunikasaun sosiál;</li><p>
+													<p><li>“Komunikasaun Sosiál”, habelar informasaun liuhosi testu, lian no imajen ne’ebé aprezenta ba  públiku  la  haree  ba  ninia  forma  hodi prodús filafali no fó-sai;</li><p>
+													<p><li>“Direitu  hodi  halo  loos”, direitu  ba  ema singulár ka koletivu ida-idak hodi halo loos notísia  ne’ebé  publika  ka  fó-sai  faktu  be laloos kona-ba nia.</li><p>
+													<p><li>“Direitu hodi hatán”, direitu ba ema singulár ka koletivu ida-idak hodi haree ba saida maka publika  ka  fó-sai  tiha  ona  fó  resposta  ba konteúdu ida ne’ebé halekar faktu ofensivu ba ninia onra, naran-di’ak, reputasaun ka imajen;</li><p>
+													<p><li>“Imprensa”, hanesan mós ho komunikasaun sosiál; </li><p>
+													<p><li> “Jornalista”, profisionál ne’ebé hala’o atividade prinsipál nu’udar jornalizmu; </li><p>
+													<p><li>“Meiu komunikasaun sosiál”, nu’udar veíkulu ne’ebé permite divulgasaun ho baibain atividade jornalístika, liuhosi forma imprensa ka eletróniku; </li><p>
+													<p><li>“Organizasaun Jornalista nian”, nu’udar ema- koletivu   harii liuhosi forma asosiasaun, ne’ebé halibur-hamutuk profisionál sira komunikasaun sosiál, ho objetivu oioin hosi organizasaun sindikatu nian; </li><p>
+													<p><li>“Órgaun komunikasaun sosiál”, nu’udar ema- koletivu públiku ka privadu ne’ebé fó-an tomak ba atividade jornalístiku nian. </li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>
+									
+											<li style="color:red"><span class="caret">Artigu 3.º - Funsaun sira komunikasaun sosiál nian</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Komunikasaun sosiál iha knaar hirak tuirmai ne’e:<p></li>
+														<li style="color:#41D216"><span class="caret">Fó-tulun hodi forma opiniaun públiku no edukasaun síviku sidadaun sira-nian;<span style="color:black;  font-size:36px">(click)</span></span><p>	
+														<ol class="nested" type="a" style="color:black">
+															<p><li>Haburas demokrasia;</li><p>
+															<p><li>Fó-sai informasaun no notísia hanesan mós ho habelar koñesimentu;</li><p>
+															<p><li>Fó-sai kultura, valór sira no identidade nasionál;</li><p>
+															<p><li>Haburas  dame no hametin estabilidade sosiál, moris-hakmatek no solidariedade nasionál;</li><p>
+															<p><li>“Direitu hodi hatán”, direitu ba ema singulár ka koletivu ida-idak hodi haree ba saida maka publika  ka  fó-sai  tiha  ona  fó  resposta  ba konteúdu ida ne’ebé halekar faktu ofensivu ba ninia onra, naran-di’ak, reputasaun ka imajen;</li><p>
+															<p><li>“Imprensa”, hanesan mós ho komunikasaun sosiál; </li><p>
+															<p><li> “Jornalista”, profisionál ne’ebé hala’o atividade prinsipál nu’udar jornalizmu; </li><p>
+															<p><li>“Meiu komunikasaun sosiál”, nu’udar veíkulu   ne’ebé   permite   divulgasaun   ho baibain atividade jornalístika, liuhosi forma imprensa ka eletróniku; </li><p>
+															<p><li>“Organizasaun Jornalista nian”, nu’udar ema- koletivu harii liuhosi forma asosiasaun, ne’ebé halibur-hamutuk profisionál sira komunikasaun sosiál, ho objetivu oioin hosi organizasaun sindikatu nian; </li><p>
+															<p><li>“Órgaun komunikasaun sosiál”, nu’udar ema- koletivu públiku ka privadu ne’ebé fó-an tomak ba atividade jornalístiku nian. </li><p>
+														</ol>
+													</li>
+													<p><li style="color:#41D216">Knaar sira-ne’ebé temi iha númeru liubá kona-ba asaun ka omisaun hosi ajente prestadór servisu sesé de’it, públiku ka privadu,  nasionál  ka  estranjeiru,  la  hasai knaar  sira  hosi  órgaun rasik komunikasaun sosiál nian.</li><p>
+													<p><li style="color:#41D216">Estadu bele fó prémiu nu’udar forma hodi rekoñese   traballu   jornalístiku   no   asaun órgaun komunikasaun sosiál nian ne’ebé destaka bainhira halo-tuir knaar be prevee iha artigu ida-ne’e</li><p>
+												</ol>
+											</li>
+											
+									<li style="color:red"><span class="caret">Artigu 4º - Devér sira komunikasaun sosiál nian</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Órgaun sira komunikasaun sosiál nia devér:<span style="color:black; font-size:36px">(click)</span></span><p>
+												<ol class="nested" type="a" style="color:black"><p>
+													<p><li>Hatebes lia-loos hosi informasaun ne’ebé hato’o, husu-tulun nafatin, bainhira bele, ba fonte oioin hodi garante versaun barabarak.</li><p>
+													<p><li>Respeita dignidade ema nian, onra no fó konsiderasaun  ba  ema  sira  nomós  direitu hirak seluk ema seluk nian; </li><p>
+													<p><li>La halo referénsia diskriminasaun kona-ba rasa, relijiaun, seksu, preferénsia seksuál, moras, konviksaun polítika nomós kondisaun sosiál; </li><p>
+													<p><li>Uza dalan étiku no legál  bainhira  hetan notísia no fó-sai informasaun; </li><p>
+													<p><li>Hametin direitu hodi hatán no halo koresau; </li><p>
+													<p><li>La identifika vítima abuzu seksuál no menór sira-ne’ebé sakar lei; </li><p>
+													<p><li>Defende   interese   públiku   no   orden demokrátiku. </li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>
+
+									<li style="color:red"><span class="caret">Artigu 5.º - Knaar Estadu nian iha komunikasaun sosiál</span>
+											<ol class="nested">
+												<p><li style="color:#41D216"><span class="caret">Knaar prinsipál sira Estadu nian iha komunikasun sosiál:<span style="color:black;  font-size:36px">(click)</span></span><p>	
+															<ol class="nested" type="a" style="color:black">
+																<p><li>Garante ezisténsia no funsionamentu servisu públiku radiodifuzaun no televizasaun nian;</li>
+																<p><li>Hametin sirkulasaun livre hodi fó-sai informasun no hetan dalan ho livre ba produtu informativu sira;</li><p>
+																<p><li>Prezerva no defende pluralizmu no konkorénsia;</li><p>
+																<p><li>Halo fiskalizasaun hodi haree katak halo-tuir lei no banati sira bainhira hala’o atividade komunikasaun sosiál;</li><p>
+																<p><li>Fó-tulun hodi forma profisionál sira komunikasaun sosiál;</li><p>
+																<p><li>Hatuur medida hodi fó-apoiu ba órgaun sira komunikasaun sosiál privadu.</li><p>
+															</ol>
+													</li>
+											</ol>
+									</li>
+									
+									<li style="color:red"><span class="caret">Artigu 6º - Apoiu Estadu nian</span>
+										<ul class="nested">
+											<p><li style="color:#41D216">Estadu bele fó ba atividade komunikasaun sosiál benefísiu ne’ebé reprezenta apoiu diretu ka indiretu, maka hanesan konsesaun benefísiu fiskál, bonifikasaun tarifa, ne’ebé sei fó tuir kritériu jerál no objetivu sira be atu hakerek iha lei</li><p>												 
+										</ul>
+									</li>
+							</ul>
+					</li> </strong><p>
+
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU II </span> - PRINSÍPIU FUNDAMENTÁL SIRA (Artigu 7-11)</span>
+						<ul class="nested">										
+						  <p><li style="color:red"><span class="caret">Artigu 7º - Direitu hodi fó-sai informasaun</span>
+								<ul class="nested">
+									<p><li style="color:#41D216">Direitu hodi fó-sai informasun ba sidadaun sira tenke asegura ho objetivu no izensaun, liuhosi kaketak momoos entre faktu no opiniaun no ho respeitu ba opiniaun lubuk oioin.</li><p>												 
+								</ul>
+							</li>	
+							
+							<li style="color:red"><span class="caret">Artigu 8º - Liberdade imprensa</span>
+								<ul class="nested">
+									<p><li style="color:#41D216">Direitu jornalista sira-nian hodi fó-hatene ezerse tuir prerogativa konstitusionál, la bele sai nu’udar objetu influénsia ne’ebé koko hasouru ninia independénsia no objetividade, liberdade kriasaun, liberdade hodi fó-sai saida maka iha ne’on, ninia direitu hodi buka no hetan informasaun, sijilu profisionál no direitu hodi partisipa iha orientasaun editoriál iha meiu komunikasaun sosiál ba ida-ne’ebé servisu ba, la sakar fali devér deontolójiku sira iha ninia knaar.</li><p>												 
+								</ul>
+							</li>
+							
+							<li style="color:red"><span class="caret">Artigu 9º - Liberdade espresaun</span>
+								<ol class="nested">
+									<p><li style="color:#41D216">Ema hotu-hotu iha liberdade hodi fó-sai no divulga ninia ideia liuhosi meiu komunikasaun sosiál</li><p>
+									<p><li style="color:#41D216">La bele hanonook ema ida tan ninia opiniaun polítika, filozófika, relijiozu ka buat hirak seluk tan</li><p>
+								</ol>
+							</li>
+							
+							<li style="color:red"><span class="caret">Artigu 10º - Liberdade imprensa</span>
+								<ul class="nested">
+									<p><li style="color:#41D216">Liberdade espresaun hosi komunikasaun sosiál sei ezerse lahó haktuir ba forma sensura sasá de’it, autorizasaun, kausaun ka abilitasaun prévia</li><p>												 
+								</ul>
+							</li>
+							<li style="color:red"><span class="caret">Artigu 11º - Limite ba Liberdade imprensa</span>
+								<ul class="nested">
+									<p><li style="color:#41D216">Liberdade imprensa iha de’it nu’udar limite direitu ba onra, naran-di’ak, reputasaun, privasidade no prezunsaun inosénsia, segredu justisa no segredu Estadu nian.</li><p>												 
+								</ul>
+							</li>							
+						</ul>
+					</li> </strong><p>
+					
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU III</span> - JORNALISTA SIRA (Artigu 12-21)</span>
+						<ul class="nested">										
+							<li style="color:red"><span class="caret">Artigu 12º - Kapasidade</span>
+								<ul class="nested">
+									<p><li style="color:#41D216">Bele sai nu’udar jornalista sidadaun maiór ne’ebé goza direitu sivíl tomak no ramata eskola ho pelumenús ensinu sekundáriu.</li><p>												 
+								</ul>
+							</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  13 - Hala'o knaar</span>
+										<ul class="nested">
+											
+												<ol class="nested" type="a" style="color:black">
+													<p><li>Nu’udar kondisaun hodi hala’o knaar jornalista, maka iha abilitasaun ho títulu rasik, hanaran karteira profisionál, ne’ebé Konsellu Imprensa halo no sei hafoun</li><p>
+													<p><li>Governu aprova liuhosi dekretu-ei regulamentu karteira profisionál jornalista no jornalista estajiáriu sira-nian.</li><p>
+													<p><li>To’o ba aprovasaun regulamentu ne’bé temi iha númeru liubá, Konsellu Imprensa halo dokumentu provizóriu ida.</li><p>
+													<p><li>Sei rekoñese títulu profisionál sira jornalista nian ne’ebé halo tiha ona hosi rain estranjeiru no ninia portadór sira bele husu inskrisaun no emisaun títulu hosi Konsellu Imprensa, hodi dispensa estájiu profisionál</li><p>
+													<p><li>La iha órgaun komunikasaun sosiál ida bele admite ka mantein ninia servisu nu’udar jornalista, sé maka la abilitadu ho títulu ne’e rasik.</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>
+												
+										
+						</ul>
+					</li> </strong><p>
+					
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU IV</span> - ÓRGAUN NO MEIU SIRA KOMUNIKASAUN SOSIÁL (Artigu 22-33)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1 - Objetu</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ol>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  2 - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun siratuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+													<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li>
+													<li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade  hodi  fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li>
+													<li>xxx</li>
+													<li>xxx</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>										
+						</ul>
+					</li> </strong><p>
+					
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU V </span> - DIREITU HODI HATÁN NO HALOOS (Artigu 34-37)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1 - Objetu</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ol>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  2 - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun siratuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+													<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li>
+													<li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade  hodi  fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li>
+													<li>xxx</li>
+													<li>xxx</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>
+												
+										
+						</ul>
+					</li> </strong><p>
+
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU VI</span> - FORMA RESPONSABILIDADE (Artigu 38-41)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1 - Objetu</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ol>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  2 - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun siratuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+													<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li>
+													<li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade  hodi  fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li>
+													<li>“Sensura”, remosaun forsada hodi fó-sai informasaun ne’ebé atu publika ka hato’o, inklui tentativa rasik, hanesan mós ho impozisaun hodi fó-sai konteúdu ba órgaun sira komunikasaun sosiál;</li>
+													<li>xxx</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>
+												
+										
+						</ul>
+					</li> </strong><p>
+					
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU VII</span> - KONSELLU IMPRENSA (Artigu 42-49)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1 - Objetu</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ol>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  2 - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun siratuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+													<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li>
+													<li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade  hodi  fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li>
+													<li>“Kódigu    étika    Jornalista    sira-nian”, kompilasaun banati deontolójiku aplikavel ba knaar ne’e;</li>
+													<li>“Komunikasaun Sosiál”, habelar informasaun liuhosi testu, lian no imajen ne’ebé aprezenta ba  públiku  la  haree  ba  ninia  forma  hodi prodús filafali no fó-sai;</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>		
+						</ul>
+					</li> </strong><p>
+					
+					<p><li style="border:1px solid green; padding:8px; font-family:Arial Rounded MT Bold; font-size:48px"><span class="caret"><span style="color:red"><strong>KAPÍTULU VIII</span> - DISPOZISAUN TRANZITÓRIU NO FINÁL SIRA (Artigu 50-54)</span>
+						<ul class="nested">										
+										<p><li style="color:red"><span class="caret">Artigu 1 - Objetu</span>
+												<ol class="nested">
+													<p><li style="color:#41D216">Lei ida-ne’e ho objetivu atu garante, proteje no regula ezersísiu ho liberdade hodi fó-sai informasaun, imprensa no meiu komunikasaun sosiál.</li><p>												 
+												</ol>
+										</li>													
+													
+									<li style="color:red"><span class="caret">Artigu  2 - Definisaun Sira</span>
+										<ul class="nested">
+											<p><li style="color:#41D216"><span class="caret">Ba aplikasaun lei ida-ne’e nian, definisaun siratuirmai dehan katak:<span style="color:black; font-size:36px">(click)</span></span>
+												<ol class="nested" type="a" style="color:black">
+													<p><li>“Atividade jornalístika”, atividade hodi halo peskiza, rekolla, halo selesaun, tratamentu no fó-sai informasaun liuhosi testu, lian ka imajen ba ema tomak liuhosi divulgasaun iha órgaun sira komunikasaun sosiál;</li>
+													<li>“Ajénsia hodi fó-sai notísia”, empreza ho espesialidade  hodi  fó-sai  notísia  ba  órgaun sira komunikasaun sosiál;</li>
+													<li>xxx</li>
+													<li>xxx</li><p>
+												</ol>
+											</li><p>											
+										</ul>
+									</li>										
+						</ul>
+					</li> </strong><p>					
+				</ul>
+	</div>
+
+		</div>
+		
+	</div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</div> 
+	  <!--  
+	
+         <div class="nav">
+          </div>
+      -->
+
+<br>
+ <div style="font-family:Century" class="footer"><marquee behavior="alternate" direction="left"><h3>Lei Komunikasaun Sosial -  Developer: Cesar Mali</h3></marquee></div>
+ 
+  
+</div>
+		
+ 
+
+</div>
+
+		
+		
+	</body>
+</html>
